@@ -1,0 +1,15 @@
+.siglePorgrammer{
+
+}
+.siglePorgrammer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.siglePorgrammer button {
+  border: none;
+  padding: 5px 10px ;
+  border-radius: 10px;
+  background-color: rgb(63, 87, 40);
+  color: white;
+}
