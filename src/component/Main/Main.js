@@ -1,3 +1,4 @@
+// import 
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Programmers from '../programmers/Programmers';
@@ -30,14 +31,14 @@ const Main = () => {
     setName(newName);
   }
  
-
+ // Get total salary
   const reducer = (prev , current) => prev + current.salary;
   const total = selectProgrammers.reduce(reducer , 0);
 
 
-
+ // main
   return (
-    <main className='container p-4'>
+    <main className='container-fluid p-4'>
        <section className= 'row'>
            <div className='col-lg-9 programmers-section'> 
               <div className="row"> 
@@ -48,16 +49,17 @@ const Main = () => {
               </div>
             </div>
 
-            {/* <h6> names: {[...name + ' ']} </h6> */}
 
      
-              <div className='col-lg-3 cart-section border h-100 p-3'>
-                   <h5> Total-add :{selectProgrammers.length} </h5>
-                   <h5> Total-deposit-mony : {total} </h5>
-                   <h6> Total added programmers name : </h6>
+              <div className='col-lg-3  h-100 '>
+                <div className='ms-5 selected-cart  p-3 '>     
+                   <h6> Total given : {selectProgrammers.length} </h6>
+                   <h6> Total paid : {total} </h6>
+                   <h6>programmers names : </h6>
                    {
-                      selectProgrammers.map(programmer => <Cart key={programmer.id}></Cart>)
+                      selectProgrammers.map(programmer => <Cart key={programmer.id} cart={programmer}></Cart>)
                    }
+              </div>
               </div>
        </section>
     </main>

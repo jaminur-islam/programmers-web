@@ -1,24 +1,82 @@
-/* header part desing */
-.nav {
-  background-color: rgb(114, 89, 89);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+
+/* body */
+body {
+  font-family: 'Open Sans', sans-serif;
+
 }
 
-h1 {
+/* header part desing */
+.nav {
+  background-color: #5335ec;
+  padding: 12px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 18px;
+
+
+}
+.nav img {
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav span {
+  margin-left: 30px;
+  font-weight: 600;
+  color: rgb(221, 217, 212);
+  text-transform: uppercase;
+}
+
+/* heading design */
+h1{
   margin: 0;
   margin-top: -10px;
-  color: black;
+  color:rgb(182, 170, 2);
+  text-transform: uppercase;
+  font-size: 29px;
 }
-h5 {
-color: rgb(114, 89, 89);
+h6 {
+color: rgb(223, 203, 203);
+width: 75%;
+margin: 0 auto;
+padding: 3px 0;
+margin-top: 5px;
+text-transform: uppercase;
+font-size: 13px;
+line-height: 25px;
+
+
 }
 
 h4{
-  color:rgb(3, 1, 114)
+  margin-top: 5px;
+  color: rgb(187, 191, 248);
+
 }
+
+/* top header section design */
 .top-header {
   width: 75%;
-  padding: 10px;
   margin: 0 auto;
-  background-color: rgb(156, 231, 121);
-  border-radius: 0 0 10px 10px;
+  background: linear-gradient(#2e294b,#2e294b);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+
+}
+
+/* Responsive */
+@media only screen and (max-width: 560px) {
+  .nav {
+    background-color: rgb(162, 0, 255);
+  }
+ .nav img {
+   position: relative;
+   display: block;
+ }
 }

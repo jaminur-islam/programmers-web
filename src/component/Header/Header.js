@@ -1,25 +1,27 @@
+// import 
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar} from 'react-bootstrap';
 import './Header.css'
 
+// Header component
 const Header = () => {
   return (
     // added Nav bar and 
     <div>
     <Navbar collapseOnSelect expand="lg"  variant="dark" className='nav'>
   <Container>
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home">  <img src={'./jhankorSir.jpg'} alt='programmer' /> <span>jhankar Mahabub</span> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    <Nav className="ms-auto">
+      <Nav.Link className='nav-link'  href="#features">Programmers</Nav.Link>
+      <Nav.Link className='nav-link'  href="#pricing"> Abount us </Nav.Link>
      
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
+      <Nav.Link className='nav-link'  href="#deets">Total members</Nav.Link>
+      <Nav.Link className='nav-link'  eventKey={2} href="#memes">
+      Contact us
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
@@ -27,10 +29,10 @@ const Header = () => {
 </Navbar>
 
 
-  <div className='text-center top-header'>
-    <h1> Programmers Association 2021 </h1>
-    <h5>It is the largest programmers association in the world</h5>
-    <h4> Total Deposited Budget : 1000 million </h4>
+  <div className='text-center top-header mt-3'>
+    <h1>The largest and best web development course in the world</h1>
+    <h6>It is the largest web development course in the world, where you are taught from the very beginning and are taught with great care.</h6>
+    <h4> Every Year’s Budget : 100 million </h4>
 
   </div>
 
