@@ -13,12 +13,12 @@ const Header = () => {
   <Navbar.Brand href="#home">  <img src={'./jhankorSir.jpg'} alt='programmer' /> <span>jhankar Mahabub</span> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="ms-auto">
+    <Nav className="ms-auto text-uppercase">
       <Nav.Link className='nav-link'  href="#features">Join Course</Nav.Link>
       <Nav.Link className='nav-link'  href="#pricing"> Abount us </Nav.Link>
      
     </Nav>
-    <Nav>
+    <Nav className= 'text-uppercase'>
       <Nav.Link className='nav-link'  href="#deets">Total members</Nav.Link>
       <Nav.Link className='nav-link'  eventKey={2} href="#memes">
       Contact us
