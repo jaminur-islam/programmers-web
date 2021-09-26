@@ -4,7 +4,6 @@ import Cart from '../Cart/Cart';
 import Programmers from '../programmers/Programmers';
 import './Main.css'
 
-
 const Main = () => {
   const [programmers , setProgrammers] = useState([]);
 
@@ -17,7 +16,6 @@ const Main = () => {
 
   // get Select Names
   const [name , setName] = useState([]);
-
 
   // Add to cart funciton
   const [selectProgrammers , setSelectProgrammers] = useState([]);
@@ -35,7 +33,6 @@ const Main = () => {
   const reducer = (prev , current) => prev + current.salary;
   const total = selectProgrammers.reduce(reducer , 0);
 
-
  // main
   return (
     <main className='container-fluid p-4'>
@@ -44,13 +41,9 @@ const Main = () => {
               <div className="row"> 
               {
               programmers.map(programmer => <Programmers programmer={programmer} key={programmer.id} addCartHandle={addCartHandle}></Programmers> )
-              }
-                         
-              </div>
-            </div>
-
-
-     
+              }               
+               </div>
+             </div>
               <div className='col-lg-3  h-100 '>
                 <div className='ms-5 selected-cart  p-3 '>     
                    <h6> Total given : {selectProgrammers.length} </h6>
@@ -59,11 +52,10 @@ const Main = () => {
                    {
                       selectProgrammers.map(programmer => <Cart key={programmer.id} cart={programmer}></Cart>)
                    }
-              </div>
+                </div>
               </div>
        </section>
-    </main>
+     </main>
   );
 };
-
 export default Main;

@@ -5,7 +5,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 
 }
-
 /* header part desing */
 .nav {
   background-color: #5335ec;
@@ -13,8 +12,6 @@ body {
   margin-bottom: 5px;
   position: relative;
   font-size: 15px;
-
-
 }
 .nav img {
   position: absolute;
@@ -24,14 +21,12 @@ body {
   height: 60px;
   border-radius: 50%;
 }
-
 .nav span {
   margin-left: 30px;
   font-weight: 600;
   color: rgb(221, 217, 212);
   text-transform: uppercase;
 }
-
 /* heading design */
 h1{
   margin: 0;
@@ -49,16 +44,12 @@ margin-top: 5px;
 text-transform: uppercase;
 font-size: 13px;
 line-height: 25px;
-
-
 }
 
 h4{
   margin-top: 5px;
   color: rgb(187, 191, 248);
-
 }
-
 /* top header section design */
 .top-header {
   width: 75%;
@@ -67,9 +58,7 @@ h4{
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
-
 }
-
 /* Responsive */
 @media only screen and (max-width: 560px) {
   .nav {

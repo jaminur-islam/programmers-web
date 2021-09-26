@@ -11,7 +11,6 @@ const Programmers = (props) => {
   return (
     <div className='col-12 col-md-6 col-lg-4 siglePorgrammer text-center ' >
       <div className='p-4 mb-3  cartt-item '>
-          
         <img src={img} alt="" className='d-block' />
         <div className='text-start'>
          <h6 className='h6 text-center'>{name.slice(0,16)}</h6>
@@ -23,7 +22,6 @@ const Programmers = (props) => {
          {
            isturo? <button className='button2'> <i className="fas fa-funnel-dollar"></i> Salary paid </button> :<button className='button' onClick={()=> addCartHandle(programmer , true)}> <i className="fas fa-hand-holding-usd"></i> Pay salary </button> 
          }
-        
       </div>
     </div>
   );
