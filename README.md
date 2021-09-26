@@ -1,6 +1,6 @@
 # Programming Course
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://react-first-assignment-8.netlify.app/).
 
 ## Available Scripts
 
