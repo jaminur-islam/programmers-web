@@ -10,7 +10,7 @@ const Header = () => {
     <div>
     <Navbar collapseOnSelect expand="lg"  variant="dark" className='nav'>
   <Container>
-  <Navbar.Brand href="#home">  <img src={'./jhankorSir.jpg'} alt='programmer' /> <span>jhankar Mahabub</span> </Navbar.Brand>
+  <Navbar.Brand href="#home">  <img src={'./jhankorSir.jpg'} alt='programmer' /> <span>jhankar Mahbub</span> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto text-uppercase">
