@@ -15,7 +15,7 @@ const Programmers = (props) => {
         <img src={img} alt="" className='d-block' />
         <div className='text-start'>
          <h6 className='h6 text-center'>{name.slice(0,16)}</h6>
-         <h6 className='head-6'> email: {email.slice(5,25)}</h6>
+         <h6 className='head-6'> email: {email.slice(5,21)}</h6>
          <h6 className='head-6'> Courses-Role : {role}</h6>
          <h6 className='head-6'> Salary  : {salary}</h6>
          <h6 className='head-6'> Home : {home}</h6>
